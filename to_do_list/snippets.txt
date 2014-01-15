@@ -1,0 +1,25 @@
+				<!-- <li>
+					<span class="task">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+					<input type="checkbox" class="icon toggle">
+					<input type="button" class="icon delete" >
+				</li>
+				<li class="completed">
+					<span class="task">Aliquam tincidunt mauris eu risus.</span>
+					<input type="checkbox" class="icon toggle" checked>
+					<input type="button" class="icon delete" >
+				</li>
+				<li>
+					<span class="task">Vestibulum auctor dapibus neque.</span>
+					<input type="checkbox" class="icon toggle">
+					<input type="button" class="icon delete" >
+				</li>
+				<li>
+					<span class="task">Nunc dignissim risus id metus.</span>
+					<input type="checkbox" class="icon toggle">
+					<input type="button" class="icon delete" >
+				</li>
+				<li class="completed">
+					<span class="task">Cras ornare tristique elit.</span>
+					<input type="checkbox" class="icon toggle" checked>
+					<input type="button" class="icon delete" >
+				</li> -->

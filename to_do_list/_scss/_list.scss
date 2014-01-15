@@ -1,0 +1,97 @@
+@mixin text {
+	//height: em(40);
+	margin: em(10) 0;
+}
+
+body, html {
+	background-color: $p5;
+}
+
+.icon {
+	cursor: pointer;
+}
+
+ul.todoList {
+	list-style-type: none;
+
+	li {	
+		@include text;
+
+		&.completed {
+			span.task {
+				text-decoration: line-through;
+				background-color: $p2;
+				color: white;
+			}
+		}
+
+		.task {
+			background-color: $p4;
+			vertical-align: middle;
+			@include pad(10px);
+			@include prefixer(user-select, text, webkit moz spec);
+		}
+		
+		input {
+			&.icon {	}
+			&.toggle {
+				background-color: $a1;
+				-webkit-appearance: none;
+				&:after {
+					//content: "\2713";
+					text-align: center;
+					&:checked {
+						color: $a2;
+					}
+				}
+				&:checked {
+					background-color: $a2;
+					&:hover {
+						background-color: $a1;
+					}
+				}
+				&:hover {
+					background-color: $a2;
+					}
+				&:active {
+					background-color: $a2;
+				}
+
+			}
+			&.delete {
+				background-color: $b1;
+				&:hover {
+					background-color: $b3;
+				}
+				&:active {
+					background-color: $b2;
+				}
+			}			
+		}
+	}
+}
+
+
+
+div.newItem {
+
+	@include text;
+	
+	input.newTask {
+		height: 40px;
+		padding: 10px;
+		background-color: $c5;
+		color: $c2;
+	}
+
+	.icon {
+		background-color: $c1;	
+		font-size: 0;			
+		&:hover {
+			background-color: $c3;
+		}
+		&:active {
+			background-color: $c2;
+		}
+	}
+}

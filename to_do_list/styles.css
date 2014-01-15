@@ -1,0 +1,757 @@
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, _scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, _scss/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, _scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, _scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, _scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 74, _scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, _scss/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, _scss/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, _scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, _scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 126, _scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, _scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, _scss/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, _scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 164, _scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, _scss/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, _scss/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, _scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 198, _scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 205, _scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 209, _scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, _scss/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, _scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, _scss/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, _scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, _scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 278, _scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 290, _scss/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 302, _scss/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 317, _scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 327, _scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 337, _scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, _scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 361, _scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 370, _scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, _scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, _scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 3, _scss/_tools.scss */
+input {
+  border: none;
+  padding: 0;
+}
+
+/* line 2, _scss/_neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2, _scss/_layout.scss */
+body, html {
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 7, _scss/_layout.scss */
+div.wrapper {
+  max-width: 45em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  padding: 20px;
+}
+/* line 15, _scss/_bourbon/addons/_clearfix.scss */
+div.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, _scss/_layout.scss */
+ul.todoList {
+  -webkit-padding-start: 0px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+/* line 16, _scss/_layout.scss */
+ul.todoList li {
+  display: block;
+}
+/* line 15, _scss/_bourbon/addons/_clearfix.scss */
+ul.todoList li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 19, _scss/_layout.scss */
+ul.todoList li .task {
+  height: inherit;
+}
+@media screen and (min-width: 37.5em) {
+  /* line 19, _scss/_layout.scss */
+  ul.todoList li .task {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  ul.todoList li .task:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 25em) and (max-width: 37.5em) {
+  /* line 19, _scss/_layout.scss */
+  ul.todoList li .task {
+    display: block;
+    float: left;
+    margin-right: 3.16844%;
+    width: 77.07368%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  ul.todoList li .task:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 19, _scss/_layout.scss */
+  ul.todoList li .task {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 65.05695%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  ul.todoList li .task:last-child {
+    margin-right: 0;
+  }
+}
+/* line 32, _scss/_layout.scss */
+ul.todoList li:first-of-type {
+  margin-top: 0;
+}
+/* line 35, _scss/_layout.scss */
+ul.todoList li:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 37.5em) {
+  /* line 44, _scss/_layout.scss */
+  div.newItem input.newTask {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 91.4702%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  div.newItem input.newTask:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 25em) and (max-width: 37.5em) {
+  /* line 44, _scss/_layout.scss */
+  div.newItem input.newTask {
+    display: block;
+    float: left;
+    margin-right: 3.16844%;
+    width: 88.53684%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  div.newItem input.newTask:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 44, _scss/_layout.scss */
+  div.newItem input.newTask {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 82.52847%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  div.newItem input.newTask:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 57, _scss/_layout.scss */
+ul.listSelector {
+  text-align: right;
+  -webkit-padding-start: 0px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  list-style-type: none;
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+@media screen and (min-width: 37.5em) {
+  /* line 57, _scss/_layout.scss */
+  ul.listSelector {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  ul.listSelector:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 25em) and (max-width: 37.5em) {
+  /* line 57, _scss/_layout.scss */
+  ul.listSelector {
+    display: block;
+    float: left;
+    margin-right: 3.16844%;
+    width: 100%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  ul.listSelector:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 57, _scss/_layout.scss */
+  ul.listSelector {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  ul.listSelector:last-child {
+    margin-right: 0;
+  }
+}
+/* line 72, _scss/_layout.scss */
+ul.listSelector li {
+  text-align: right;
+  display: inline;
+}
+/* line 75, _scss/_layout.scss */
+ul.listSelector li:first-of-type {
+  margin-right: 5px;
+}
+/* line 78, _scss/_layout.scss */
+ul.listSelector li:last-of-type {
+  margin-left: 5px;
+}
+
+/* line 84, _scss/_layout.scss */
+input.icon {
+  height: 40px;
+}
+@media screen and (min-width: 37.5em) {
+  /* line 84, _scss/_layout.scss */
+  input.icon {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  input.icon:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 25em) and (max-width: 37.5em) {
+  /* line 84, _scss/_layout.scss */
+  input.icon {
+    display: block;
+    float: left;
+    margin-right: 3.16844%;
+    width: 8.29472%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  input.icon:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 25em) {
+  /* line 84, _scss/_layout.scss */
+  input.icon {
+    display: block;
+    float: left;
+    margin-right: 4.82916%;
+    width: 12.64237%;
+  }
+  /* line 29, _scss/_neat/grid/_span-columns.scss */
+  input.icon:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 6, _scss/_list.scss */
+body, html {
+  background-color: #e4d8ff;
+}
+
+/* line 10, _scss/_list.scss */
+.icon {
+  cursor: pointer;
+}
+
+/* line 14, _scss/_list.scss */
+ul.todoList {
+  list-style-type: none;
+}
+/* line 17, _scss/_list.scss */
+ul.todoList li {
+  margin: 0.625em 0;
+}
+/* line 21, _scss/_list.scss */
+ul.todoList li.completed span.task {
+  text-decoration: line-through;
+  background-color: #835dd5;
+  color: white;
+}
+/* line 28, _scss/_list.scss */
+ul.todoList li .task {
+  background-color: #bc9cff;
+  vertical-align: middle;
+  padding: 10px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+/* line 37, _scss/_list.scss */
+ul.todoList li input.toggle {
+  background-color: #3fff79;
+  -webkit-appearance: none;
+}
+/* line 40, _scss/_list.scss */
+ul.todoList li input.toggle:after {
+  text-align: center;
+}
+/* line 43, _scss/_list.scss */
+ul.todoList li input.toggle:after:checked {
+  color: #4fd577;
+}
+/* line 47, _scss/_list.scss */
+ul.todoList li input.toggle:checked {
+  background-color: #4fd577;
+}
+/* line 49, _scss/_list.scss */
+ul.todoList li input.toggle:checked:hover {
+  background-color: #3fff79;
+}
+/* line 53, _scss/_list.scss */
+ul.todoList li input.toggle:hover {
+  background-color: #4fd577;
+}
+/* line 56, _scss/_list.scss */
+ul.todoList li input.toggle:active {
+  background-color: #4fd577;
+}
+/* line 61, _scss/_list.scss */
+ul.todoList li input.delete {
+  background-color: #ff593f;
+}
+/* line 63, _scss/_list.scss */
+ul.todoList li input.delete:hover {
+  background-color: #c43720;
+}
+/* line 66, _scss/_list.scss */
+ul.todoList li input.delete:active {
+  background-color: #d5614f;
+}
+
+/* line 76, _scss/_list.scss */
+div.newItem {
+  margin: 0.625em 0;
+}
+/* line 80, _scss/_list.scss */
+div.newItem input.newTask {
+  height: 40px;
+  padding: 10px;
+  background-color: #fff9d3;
+  color: #d5c24f;
+}
+/* line 87, _scss/_list.scss */
+div.newItem .icon {
+  background-color: #ffe43f;
+  font-size: 0;
+}
+/* line 90, _scss/_list.scss */
+div.newItem .icon:hover {
+  background-color: #c4ad20;
+}
+/* line 93, _scss/_list.scss */
+div.newItem .icon:active {
+  background-color: #d5c24f;
+}

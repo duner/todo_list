@@ -1,0 +1,6 @@
+@import "_neat/_neat-helpers";
+
+// Define your breakpoints
+$large: new-breakpoint(min-width em(600));
+$medium: new-breakpoint(min-width em(400) max-width em(600) 9); 
+$small: new-breakpoint(max-width em(400) 6); 
